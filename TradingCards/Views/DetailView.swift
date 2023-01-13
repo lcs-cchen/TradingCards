@@ -65,20 +65,13 @@ struct DetailView: View {
                         .resizable()
                         .frame(width: 355, height: 560)
                     Rectangle()
-                        .
+                        .foregroundColor(Color("color 1"))
                         .frame(width: 355, height: 560)
-                    Spacer(minLength: 40)
-                    HStack{
-                        
-                        Image("wSigniture")
-                            .resizable()
-                            .frame(width: 200, height: 125)
-                            .padding(.leading, 200)
-                            .padding(.bottom,50)
-                        
-                        
+                    VStack{
+                        Text("Top Hockey")
+                            .font(Font.custom("HoeflerText-Black", size: 40))
+                            .foregroundColor(.red)
                     }
-                    
                 }
             }
         }
