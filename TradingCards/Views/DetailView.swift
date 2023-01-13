@@ -71,6 +71,25 @@ struct DetailView: View {
                         Text("Top Hockey")
                             .font(Font.custom("HoeflerText-Black", size: 40))
                             .foregroundColor(.red)
+                            .padding()
+                        HStack{
+                            Text("by Cyrus Chen")
+                                .font(.subheadline)
+                                .padding(.leading,40)
+                            Spacer()
+                            Text("1")
+                                .font(.subheadline)
+                                .padding(.trailing,40)
+                            
+                        }
+                        Rectangle()
+                            .frame(width: 320, height: 1)
+                            .padding(.top, -10)
+                        HStack{
+                            VStack{
+                                Text("Wayne Gretzky")
+                            }
+                        }
                     }
                 }
             }
