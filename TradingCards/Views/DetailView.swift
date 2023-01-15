@@ -68,10 +68,22 @@ struct DetailView: View {
                         .foregroundColor(Color("color 1"))
                         .frame(width: 355, height: 560)
                     VStack{
-                        Text("Top Hockey")
-                            .font(Font.custom("HoeflerText-Black", size: 40))
-                            .foregroundColor(.red)
-                            .padding()
+                        HStack{
+                            Text("Top Hockey")
+                                .font(Font.custom("HoeflerText-Black", size: 35))
+                                .foregroundColor(.red)
+                                .padding(.leading,60)
+                            ZStack{
+                                Circle()
+                                    .frame(width:70)
+                                    .foregroundColor(.red)
+                                Text("99/100")
+                                    .foregroundColor(.white)
+                                    .font(.title3)
+                            }
+                            .padding(.top, 10)
+                            .padding(.bottom, -15)
+                        }
                         HStack{
                             Text("by Cyrus Chen")
                                 .font(.subheadline)
@@ -86,10 +98,99 @@ struct DetailView: View {
                             .frame(width: 320, height: 1)
                             .padding(.top, -10)
                         HStack{
-                            VStack{
+                            VStack(alignment: .leading){
                                 Text("Wayne Gretzky")
+                                    .font(.title2)
+                                Text("edminton oilers")
+                                    .font(.subheadline)
+                                    .italic()
+                                Text("card set: ")
+                                    .font(.caption2)
+                                Text("1987 TP NHL")
                             }
+                            Spacer()
+                            Text("99")
+                                .font(.largeTitle)
+                            
                         }
+                        .padding(.horizontal, 40)
+                        Rectangle()
+                            .frame(width: 320, height: 1)
+                            .padding(.top, -10)
+                        HStack{
+                            Text("This special edition set containes all the best players to ever touch hockey in the NHL")
+                                .font(.caption)
+                                .padding(.leading, 40)
+                            
+                            Image("1")
+                                .resizable()
+                                .frame(width: 125, height: 60)
+                                .padding(.trailing, 30)
+                            
+                            
+                        }
+                        .padding(.bottom, 10)
+                        HStack{
+                        Text("Wayne Douglas Gretzky CC")
+                            .bold()
+                        Text("is a Canadian former")
+                                .padding(.leading, -5)
+                        Spacer()
+                                                        
+                    }
+                        .font(.caption)
+                        .padding(.horizontal, 40)
+                        Text("professional ice hockey player and former head coach. He played 20 seasons in the National Hockey League for four teams from 1979 to 1999.")
+                            .font(.caption)
+                            .padding(.horizontal, 40)
+                            .padding(.bottom, 10)
+                        HStack{
+                            Text("Top Hockey NHL 2023")
+                            Spacer(minLength: 20)
+                            Text("Printed In the USA")
+                        }
+                        .font(.caption)
+                        .padding(.horizontal, 40)
+                        .padding(.vertical, 5)
+                        VStack{
+                            Rectangle()
+                                .frame(width: 320, height: 1)
+                                .padding(.top, -10)
+                            HStack{
+                                Image("topHockey")
+                                    .resizable()
+                                    .frame(width: 80, height: 50)
+                                    .padding(.leading,-15)
+                                    
+                                Rectangle()
+                                    .frame(width:1, height: 60)
+                                    .padding(.vertical, -30)
+                                    .padding(.horizontal, -15)
+                                Image("NHL")
+                                    .resizable()
+                                    .frame(width: 50,  height: 50)
+                                    .padding(.leading,-15)
+                                Rectangle()
+                                    .frame(width:1, height: 60)
+                                    .padding(.vertical, -30)
+                                Spacer()
+                                Image("oLogo")
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
+                                    
+                            }
+                            .padding(.top,-11)
+                            .padding(.horizontal, 40)
+                            Rectangle()
+                                .frame(width: 320, height: 1)
+                            HStack{
+                                Text("1/5")
+                                    .foregroundColor(.red)
+                                Spacer()
+                            }
+                            .padding(.horizontal,40)
+                        }
+                        
                     }
                 }
             }
